@@ -53,28 +53,5 @@ Configuration is managed through environment variables:
 | MAX_CONNECTIONS | Maximum DB connections | 100 |
 | SHUTDOWN_TIMEOUT | Graceful shutdown timeout (seconds) | 10 |
 
-## Project Structure
-azure-go-app/
-├── .github/workflows/           # CI/CD pipelines
-├── cmd/api/                     # Application entry points
-├── internal/                    # Private application code
-│   ├── config/                  # Configuration management
-│   ├── handlers/                # HTTP handlers
-│   ├── middleware/              # HTTP middleware
-│   ├── models/                  # Data models
-│   ├── repository/              # Data access layer
-│   ├── service/                 # Business logic
-│   └── telemetry/               # Metrics and tracing
-├── pkg/                         # Public libraries
-│   ├── cache/                   # Shared caching utilities
-│   └── azure/                   # Azure service wrappers
-├── deploy/                      # Deployment resources
-│   ├── terraform/               # IaC for Azure resources
-│   ├── kubernetes/              # Kubernetes manifests
-│   └── scripts/                 # Deployment scripts
-├── Dockerfile                   # Container definition
-├── go.mod                       # Go module definition
-└── README.md                    # Project documentation
-
 ## License
 blanho
