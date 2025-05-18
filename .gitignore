@@ -1,0 +1,65 @@
+# .gitignore
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/bin/
+/dist/
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+coverage.txt
+
+# Dependency directories
+vendor/
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+backend.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.rc
+
+# Built application
+app
+main
+
+# Azure Functions
+local.settings.json
+bin/
+obj/
+
+# Deployment artifacts
+deploy/kubernetes/secrets.yaml.bak
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp/

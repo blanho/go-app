@@ -1,0 +1,17 @@
+# deploy/kubernetes/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: azure-go-app
+  namespace: production
+  labels:
+    app: azure-go-app
+spec:
+  selector:
+    app: azure-go-app
+  ports:
+  - port: 80
+    targetPort: 8080
+    protocol: TCP
+    name: http
+  type: ClusterIP
